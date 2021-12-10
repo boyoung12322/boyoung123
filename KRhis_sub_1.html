@@ -1,0 +1,146 @@
+<!DOCTYPE html><!--22161110 정보영-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src='./js/jquery-1.7.js'></script>
+    <script src='./js/jquery-3.6.0.min.js'></script>
+    <script src='./js/jquery-ui.min.js'></script>
+    <script src='./js/slick.js'></script>
+    <title>TOM HARDY_main</title>
+</head>
+<body style="background-color: black;">
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="./img/logo.png"></a>
+        </div>
+        
+        <nav id="main_menu">
+            <div id="sub_m">
+                | <a href="intro.html">INTRO</a>  |
+            </div>
+            <div id="menu">
+            <ul class="dep1">
+                <li>
+                    <a href="KRhistory.html">HISTORY</a>
+                    <ul class="dep2">
+                        <li><a href="KRhis_sub_1.html" >BIOGRAPHY</a></li>
+                        <li><a href="KRhis_sub_2.html">STORY</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="KRfilm.html">FILM</a>
+                    <ul class="dep2">
+                        <li><a href="KRflim_sub_1.html">MOVIE</a></li>
+                        <li><a href="KRflim_sub_2.html">DRAMA</a></li>
+                        <li><a href="KRfilm_sub_3.html">BEST VIDEO</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="KRaward.html">AWARD</a>
+                </li>
+                <li>
+                    <a href="KRcharacter.html">CHARACTER</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <div style="overflow: hidden;">
+            <div class="bio_con">
+                <div class="bio_slide">
+                    <div class="bio_card">
+                        <div class="bio_txt">   
+                            <div class="b_title">FIND ME A <br> <span>SUPERMODEL</span></div>
+                            <div class="b_se_ttl">20대 초반 잠깐의 모델 활동</div>
+                            <div class="b_txt">영국 TV 쇼 ' THE BIG BREAKFAST '에서 방영 된
+                                <br>FIND ME A SUPERMODEL 에서 1위에 뽑히면서<br>
+                                모델 에이전시와 계약을 하게 되어 데뷔하지만<br>
+
+                                <br>
+                                톰 하디 특유의 뒤뚱거리는 걸음걸이가 고쳐지지않아<br>
+                                3년 정도의 짧은 모델활동을 마무리 합니다
+                                </div>
+                        </div>
+                        <div class="b_img">
+                            <img src="./img/bio_tom1.png" width="380">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bio_slide">
+                    <div class="bio_card">
+                        <div class="bio_txt">   
+                            <div class="b_title">12 LINES OF<br> <span>ACTING</span></div>
+                            <div class="b_se_ttl">첫 데뷔 작, 12줄의 대사 '밴드 오브 브라더스'</div>
+                            <div class="b_txt"> 톰 하디는 스티븐 스필버그의 영화 ' Band of brothers '에 <br> 
+                                출연을 하며 데뷔하게 되는데 이때 그의 대사가 고작<br> 
+                                12줄이었습니다<br> <br> 
+                                
+                                하지만 이 영화를 계기로 톰 하디는 학업을 중단하고<br> 
+                                전업 배우로서의 길을 가고자 했고<br> 
+                                이 후 영국을 넘어 헐리우드에서의 첫 데뷔를 하게 됩니다<br> 
+                            </div>
+                        </div>
+                        <div class="b_img">
+                            <img src="./img/bio_tom2.png" width="380">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bio_slide">
+                    <div class="bio_card">
+                        <div class="bio_txt">   
+                            <div class="b_title">HIS HERO,<br> <span>GARY OLDMAN</span></div>
+                            <div class="b_se_ttl">톰 하디의 롤모델, 게리 올드먼</div>
+                            <div class="b_txt">게리 올드먼은 해리포터의 '시리우스 블랙'으로 유명한 <br>
+                                배우인데 톰 하디는 게리 올드먼의 연기를 동경하며<br>
+                                꼭 함께 연기를 해보고 싶은 자신의 영웅들 중 하나라고<br>
+                                데뷔 초 말해왔었는데<br><br>
+                                
+                                이후 로 리스, 다크나이트 라이즈, 차일드 44 등의 영화를<br>
+                                게리 올드먼과 함께하며 소원을 이루게 됩니다
+                                
+                            </div>
+                        </div>
+                        <div class="b_img">
+                            <img src="./img/bio_tom3.png" width="380">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bio_slide_but">
+            <button class="bio_but bio_but1"></button>
+            <button class="bio_but bio_but2"></button>
+            <button class="bio_but bio_but3"></button>
+        </div>
+        
+
+    </section>
+    
+    <script>
+        document.querySelector('.bio_but1').addEventListener('click', function(){
+            document.querySelector('.bio_con').style.transform = 'translate(0)'
+        })
+
+        document.querySelector('.bio_but2').addEventListener('click', function(){
+            document.querySelector('.bio_con').style.transform = 'translate(-100vw)'
+        })
+
+        document.querySelector('.bio_but3').addEventListener('click', function(){
+            document.querySelector('.bio_con').style.transform = 'translate(-200vw)'
+        })
+
+
+    
+    </script>
+    
+</body>
+</html>

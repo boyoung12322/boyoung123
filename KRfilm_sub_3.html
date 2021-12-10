@@ -1,0 +1,401 @@
+<!DOCTYPE html><!--22161110 정보영-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="">
+    <script src='main.js'></script>
+    <title>TOM HARDY_main</title>
+
+    <style>
+        
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+
+/* 초기화 */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR';
+    width: 100%;
+    height: 100vh;
+}
+
+a:link{
+    color: white;
+    text-decoration-line: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration-line: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a:active{
+    color: white;
+    text-decoration-line: none;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+
+button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    z-index: 9999;
+    background: #020a0d96;
+    
+}
+
+
+#logo{
+    float: left;
+    margin-top: 10px;
+    margin-left: 360px;
+}
+
+#main_menu{
+    float: right;
+    margin-right: 335px;
+}
+
+#sub_m{
+    text-align: right;
+    color: white;
+    margin-top: 30px;
+    font-size: 15px;
+    margin-right: 25px;
+}
+
+
+#menu{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#menu .dep1 > li{
+    display: inline-block;
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    vertical-align: top;
+    width: 150px;
+    
+
+}
+
+#menu .dep1 > li > a {
+    display: block;
+}
+
+#menu .dep1 > li:hover > .dep2{
+    display: block;
+}
+
+#menu .dep1 > li:hover > a{
+    color: #f63030;
+    background-color: white;
+    border-radius: 30px
+    
+   
+}
+
+#menu .dep2{
+    display: none;
+    background: white;
+    margin-top: 10px;
+}
+
+#menu .dep2 > li{
+    font-size: 15px;
+    
+}
+
+#menu .dep2 > li:hover > a{
+    color:#f63030
+}
+
+#menu .dep2 a{
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.bv_con{
+    width: 1200px;
+    height: 800px;  
+    margin: 0 auto;
+}
+
+.bv_info{
+    width: 800px;
+    height: 500px;
+}
+
+.info_txt{
+    color: white;
+    position: absolute;
+    top: 200px;
+}
+
+.info_txt h3{
+    font-size: 80px;
+    font-weight: 800;
+    padding-bottom: 50px;
+}
+
+.info_txt > p {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 25px;
+
+}
+
+.info_txt > p > span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bv_tab{
+    width: 800px;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.tab_ch{
+    position: absolute;
+    display: none;
+    padding-top: 20px;
+}
+
+.tab_ch > ul > li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.ch_txt{
+    font-size: 20px;
+    color: white;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.ch_txt > span {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+div.tab_but{ overflow: hidden;}
+div.tab_but > label {
+    color: white;
+    font-size: 20px;
+    border-bottom: 4px solid white;
+    padding: 20px;
+    font-weight: 100;
+}
+
+input[type="radio"] { display: none;}
+
+input[id="tab01"]:checked ~ .con1 {display: block;}
+input[id="tab02"]:checked ~ .con2 {display: block;}
+
+input:nth-of-type(1):checked ~ div.tab_but >  label:nth-of-type(1) {
+    
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+}
+
+input:nth-of-type(2):checked ~ div.tab_but >  label:nth-of-type(2) {
+    
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+}
+
+.bv_img{
+    position: absolute;
+    top: 420px;
+    left: 1260px;
+    width: 300px;
+} 
+
+.bv_img_2{
+    position: absolute;
+    top: 635px;
+    left: 1260px;
+    width: 300px;
+}
+
+.tra_vd{
+    width: 1200px;
+    margin: 0 auto;
+    height: 800px;
+}
+
+.vd_tit{
+    font-size: 80px;
+    font-weight: 800;
+    color: white;
+    margin-top: 150px;
+}
+
+.bv_video{
+    margin-top: 10px;
+    padding-bottom: 70px;
+}
+
+    </style>
+</head>
+<body style="background: url('./img/bv_bg.png') no-repeat center; background-size: cover; background-attachment: fixed;">
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="./img/logo.png"></a>
+        </div>
+        <nav id="main_menu">
+            <div id="sub_m">
+                | <a href="intro.html">INTRO</a>  |
+            </div>
+            <div id="menu">
+            <ul class="dep1">
+                <li>
+                    <a href="KRhistory.html">HISTORY</a>
+                    <ul class="dep2">
+                        <li><a href="KRhis_sub_1.html" >BIOGRAPHY</a></li>
+                        <li><a href="KRhis_sub_2.html">STORY</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="KRfilm.html">FILM</a>
+                    <ul class="dep2">
+                        <li><a href="KRflim_sub_1.html">MOVIE</a></li>
+                        <li><a href="KRflim_sub_2.html">DRAMA</a></li>
+                        <li><a href="KRfilm_sub_3.html">BEST VIDEO</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="KRaward.html">AWARD</a>
+                </li>
+                <li>
+                    <a href="KRcharacter.html">CHARACTER</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="bv_con">
+       <div class="bv_info">
+           <div class="info_txt">
+            <h3>INCEPTION</h3>
+            <p>
+               <span> 영화  |  인셉션  |  2010</span><br><br>
+               타인의 꿈에 들어가 생각을 훔치는 특수 보안요원 코브.<br>
+               라이벌 기업의 정보를 빼내고자 사이토는 생각을 심는 인셉션 작전을 제안한다.<br>
+               성공 조건으로 수배자 신분을 바꿔주겠다는 제안을 하고<br>
+               최강의 팀을 구성해 인셉션 작전을 실행하지만 예기치 못한 사건들과 마주하게 되는데...
+            </p>
+           </div>
+       </div>
+       <div class="bv_tab">
+        <input id="tab01" type="radio" name="tab" checked />
+        <input id="tab02" type="radio" name="tab" />
+
+        <div class="tab_but">
+            <label for="tab01">등장인물</label>
+            <label for="tab02">정보</label>
+        </div>
+
+        <div class="tab_ch con1">
+            <ul>
+                <li>
+                    <div><img src="./img/bv_ch1.png" alt=""></div>
+                    <div class="ch_txt">임스 역 <br>
+                    <span>| 톰 하디</span></div>
+                </li>
+                <li>
+                    <div><img src="./img/bv_ch2.png" alt=""></div>
+                    <div class="ch_txt">코비 역  <br>
+                    <span>| 레오나르도 디카프리오</span></div>
+                </li>
+                <li>
+                    <div><img src="./img/bv_ch3.png" alt=""></div>
+                    <div class="ch_txt">사이토<br>
+                    <span>|와타나베 켄 </span></div>
+                </li>
+                <li>
+                    <div><img src="./img/bv_ch4.png" alt=""></div>
+                    <div class="ch_txt">멜 역 <br>
+                    <span>| 마리옹 꼬띠아르</span></div>
+                </li>
+            </ul>
+        </div>
+
+     <div class="tab_ch con2">
+            <ul>
+                <li>
+                    <div class="ch_txt">개봉 <br>
+                    <span>| 2010.07.21</span></div>
+                </li>
+                <li>
+                    <div class="ch_txt">이용연령 <br>
+                    <span>| 12 years</span></div>
+                </li>
+                <li>
+                    <div class="ch_txt">장르   <br>
+                    <span>| Action/Sci-Fi/Fantasy</span></div>
+                </li>
+                <li>
+                    <div class="ch_txt">러닝타임 <br>
+                    <span>| 148 minutes</span></div>
+                </li>
+            </ul>
+        </div>
+       </div>
+       <img src="./img/still_1.png" class="bv_img">
+       <img src="./img/still_2.png" class="bv_img_2">
+    </div>
+
+    <div class="tra_vd">
+        <div class="vd_tit">
+            TRAILER
+        </div>
+        <div class="bv_video">
+            <video width="1196" height="673"  loop muted controls>
+                <source src="./img/incep.mp4" type="video/mp4">
+                <source src="./img/incep.webm" type="video/webm">
+                <source src="./img/incep.ogg" type="video/ogg">
+            </video>
+    </div>
+</body>
+</html>

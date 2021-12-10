@@ -1,0 +1,94 @@
+<!DOCTYPE html><!--22161110 정보영-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src='./js/jquery-1.7.js'></script>
+    <script src='./js/jquery-3.6.0.min.js'></script>
+    <script src='./js/jquery-ui.min.js'></script>
+    <script src='./js/slick.js'></script>
+    <title>TOM HARDY_main</title>
+</head>
+<body style="background-color: black;">
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="./img/logo.png"></a>
+        </div>
+        
+        <nav id="main_menu">
+            <div id="sub_m">
+                | <a href="intro.html">INTRO</a>  |
+            </div>
+            <div id="menu">
+            <ul class="dep1">
+                <li>
+                    <a href="KRhistory.html">HISTORY</a>
+                    <ul class="dep2">
+                        <li><a href="KRhis_sub_1.html" >BIOGRAPHY</a></li>
+                        <li><a href="KRhis_sub_2.html">STORY</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="KRfilm.html">FILM</a>
+                    <ul class="dep2">
+                        <li><a href="KRflim_sub_1.html">MOVIE</a></li>
+                        <li><a href="KRflim_sub_2.html">DRAMA</a></li>
+                        <li><a href="KRfilm_sub_3.html">BEST VIDEO</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="KRaward.html">AWARD</a>
+                </li>
+                <li>
+                    <a href="KRcharacter.html">CHARACTER</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+
+    <div class="flim_wr">
+        <ul class="tabs">
+            <li class="tab_link current" data-tab="s3t_01"><a href="javascript:;" ondblclick="location.href='KRflim_sub_1.html';">MOVIE</a></li>
+            <li class="tab_link" data-tab="s3t_02"><a href="javascript:;" ondblclick="location.href='KRflim_sub_2.html';">DRAMA</a></li>
+            <li class="tab_link" data-tab="s3t_03"><a href="javascript:;" ondblclick="location.href='KRfilm_sub_3.html';">BEST VIDEO</a></li>
+        </ul>
+
+        <a id="s3t_01" class="tab_con current_tab"  href="">
+            <img src="./img/mv_1.png" alt="">
+            <h3 class="film_sub_ttl">MOVIE FILMOGRAPHY</h3> 
+            <p class="back_ttl">THE</p>
+            <p class="front_ttl">REVENANT</p>
+        </a>
+        <a id="s3t_02" class="tab_con" href="">
+            <img src="./img/dr_1.png" alt="">
+            <h3 class="film_sub_ttl_1">DRAMA FILMOGRAPHY</h3>
+            <p class="back_ttl_1">PEAKY</p>
+            <p class="front_ttl_1">BLINDERS</p>
+        </a>
+        <a id="s3t_03" class="tab_con" href="">
+            <img src="./img/bv_1.png" alt="">
+            <h3 class="film_sub_ttl_2">BEST VIDEO</h3>
+            <p class="front_ttl_2">INCEPTION</p>
+        </a>
+        
+        <script>
+            $(document).ready(function(){
+    
+                $('ul.tabs li').click(function(){
+                    var tab_id = $(this).attr('data-tab');
+
+                    $('ul.tabs li').removeClass('current');
+                    $('.tab_con').removeClass('current_tab');
+
+                    $(this).addClass('current');
+                    $("#"+tab_id).addClass('current_tab');
+                })
+            })
+        </script>
+    </div>
+</body>
+</html>
